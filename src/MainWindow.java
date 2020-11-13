@@ -28,7 +28,7 @@ public class MainWindow extends JFrame {
         JMenu fileMenu = new JMenu("文件(F)");
         fileMenu.setFont(new Font("微軟正黑體", Font.PLAIN, 12));
         fileMenu.setMnemonic(KeyEvent.VK_F);
-        
+                
         //新建文件
         JMenuItem menuItem = new JMenuItem("新建(N)",KeyEvent.VK_N);
         menuItem.setFont(new Font("微軟正黑體", Font.PLAIN, 12));

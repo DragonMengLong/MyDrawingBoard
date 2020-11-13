@@ -13,6 +13,7 @@ public class BoardPanel extends JPanel {
 		this.setBounds(0,0,width,height);
 		Main.mainWindow.boardBackPanel.add(this);
 		Main.mainWindow.repaint();
+		
 	}
 
 }

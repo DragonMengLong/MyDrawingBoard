@@ -32,8 +32,9 @@ public class MainWindow extends JFrame {
         //新建文件
         JMenuItem menuItem = new JMenuItem("新建(N)",KeyEvent.VK_N);
         menuItem.setFont(new Font("微軟正黑體", Font.PLAIN, 12));
-        
+        //菜单快捷方式
         menuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, ActionEvent.CTRL_MASK));
+        //添加菜单按钮监听器
         ManuButtonListener buttonListener = new ManuButtonListener();
         menuItem.addMouseListener(buttonListener);
         menuItem.addActionListener(buttonListener);

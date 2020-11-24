@@ -20,7 +20,7 @@ public class ToolPanel extends JPanel {
 	//简单的添加按钮 仅仅调试用
 	private void defaultButtonAdd()
 	{
-		String[] commandName = {"pencl","line","brush","cycle_fill","cycle_wire","rect_fill","rect_wire","rect_rc_wire","rect_rc_fill","eraser"};
+		String[] commandName = {"pencil","line","brush","cycle_fill","cycle_wire","rect_fill","rect_wire","rect_rc_wire","rect_rc_fill","eraser"};
 		for(String command : commandName)
 		{
 			JButton button = new JButton(command);

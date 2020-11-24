@@ -6,40 +6,40 @@ public class ToolPanelListener implements ActionListener, MouseListener {
 	
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
-		// TODO Auto-generated method stub
+		 
 		
 	}
 
 	@Override
 	public void mouseEntered(MouseEvent arg0) {
-		// TODO Auto-generated method stub
+		 
 		
 	}
 
 	@Override
 	public void mouseExited(MouseEvent arg0) {
-		// TODO Auto-generated method stub
+		 
 		
 	}
 
 	@Override
 	public void mousePressed(MouseEvent arg0) {
-		// TODO Auto-generated method stub
+		 
 		
 	}
 
 	@Override
 	public void mouseReleased(MouseEvent arg0) {
-		// TODO Auto-generated method stub
+		 
 		
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
+		 
 		
 		String currentCommand = arg0.getActionCommand();
-		System.out.print("点击了"+currentCommand);
+		System.out.print("点击了"+currentCommand+"\n");
 		
 		if(currentCommand.equals("color"))
 		{

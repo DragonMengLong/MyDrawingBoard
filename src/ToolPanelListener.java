@@ -45,10 +45,17 @@ public class ToolPanelListener implements ActionListener, MouseListener {
 		{
 			BoardPanel.boardPanelListener.currentColor=((JButton)arg0.getSource()).getBackground();
 		}
+		//≤‚ ‘”√
+		else if(currentCommand.equals("repaint"))
+		{
+			Main.boardPanel.repaint();
+		}
 		else
 		{
 			BoardPanel.boardPanelListener.currentCommand=currentCommand;
 		}
+		if(Main.boardPanel!=null)
+			Main.boardPanel.requestFocus();
 	}
 
 }

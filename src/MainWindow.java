@@ -17,7 +17,8 @@ public class MainWindow extends JFrame {
 		toolPanel = new ToolPanel();
 		
 		//ª˘¥°…Ë÷√
-        this.setSize(600,600);
+        this.setSize(1200,700);
+        //this.getGraphicsConfiguration().getDevice().setFullScreenWindow(this);
         this.setBackground(Color.BLACK);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

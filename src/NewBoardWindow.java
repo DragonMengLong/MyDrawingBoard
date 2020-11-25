@@ -114,6 +114,10 @@ public class NewBoardWindow extends JFrame {
 			if("确定".equals(command))
 			{
 				Main.boardPanel = new BoardPanel(width,height);
+				//清空上一次画板的历史
+				Repaint.repaintList.clear();
+				//将焦点转移到画板下
+				Main.boardPanel.requestFocus();
 				System.out.print("确定按下");
 				Main.newBoardWindow.mySetVisible(false);
 			}

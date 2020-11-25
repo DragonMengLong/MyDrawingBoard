@@ -25,6 +25,8 @@ public class BoardPanel extends JPanel {
 		//添加监听器
 		this.addMouseListener(boardPanelListener);
 		this.addMouseMotionListener(boardPanelListener);
+		this.addKeyListener(boardPanelListener); 
+		//this.requestFocus(); 放在构造函数里面没有用
 		//boardPanelListener.graphics=(Graphics2D)this.getGraphics(); 在构造函数内部进行getGraphics得出的值为空值
 		
 		//添加画板并通过repaint显示，若不repaint则只有调整主窗口大小时才会显现
@@ -32,4 +34,10 @@ public class BoardPanel extends JPanel {
 		Main.mainWindow.repaint();
 	}
 	
+	@Override
+	public void paint(Graphics g) {
+		super.paint(g);
+		Repaint.repainGraph((Graphics2D)g);
+	}
+
 }

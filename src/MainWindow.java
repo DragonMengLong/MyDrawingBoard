@@ -2,7 +2,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
-import java.awt.Dialog.ModalExclusionType;
 
 
 public class MainWindow extends JFrame {
